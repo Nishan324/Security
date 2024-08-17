@@ -38,3 +38,6 @@ router.put('/change-password', verifyUser, parseForm, csrfProtection, userContro
 router.delete('/delete-user/:id', verifyUser, verifyAuthorization, parseForm, csrfProtection, userController.deleteUser);
 
 module.exports = router;
+
+
+// userroute

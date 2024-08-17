@@ -40,6 +40,8 @@ router.delete('/delete-user/:id', verifyUser, verifyAuthorization, parseForm, cs
 
 module.exports = router;
 
+// server
+
 
 
 

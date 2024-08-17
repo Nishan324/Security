@@ -2,6 +2,7 @@
 
 
 // userRoutes.js
+//user
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userControllers');
@@ -38,5 +39,7 @@ router.put('/change-password', verifyUser, parseForm, csrfProtection, userContro
 router.delete('/delete-user/:id', verifyUser, verifyAuthorization, parseForm, csrfProtection, userController.deleteUser);
 
 module.exports = router;
+
+
 
 
